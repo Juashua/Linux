@@ -1,0 +1,52 @@
+Core Commands
+ls = list segments
+ls -a = show hidden files
+ls -l = shows files with permissions
+ls -al = shows hidden files and permissions
+cd = change directory
+cd .. = go back to previous directory
+touch = creates a file
+mkdir = creates directory
+rm = remove file
+rm -r = remove all files in directory as well as the directory
+rm -f = force delete option
+rm -rf = (exercise with caution)
+rmdir = remove directory (directory must be empty)
+mv = move or rename file
+mv -r = move an entire directory
+cp = copy a file
+cp -R = copy many files to move to another directory
+cat = view a file
+man = view manual to show options
+man -h = help shortlist of options
+tmp = directory that is always world readable and writable
+history = shows terminal history
+
+Search Commands
+grep = search within files
+grep -r = recursively search files
+find = find file
+locate = locate file
+updatedb = important to run before locate
+which = tells where the binary for that command lives in the file system
+whereis = tells location of executable, source files, & man pages
+find / = search at root directory
+rm p* = remove anything beginning with a p
+rm *7 = remove anything ending with a 7
+rm i = remove anything with an i
+rm *'ba du bop' = remove anything with phrase ba du bop
+
+Filter Commands
+> = redirects the std out to a file
+>> = appends the std out to a file
+| = pipe redirects the std out to another command
+2 > /dev/null = will redirect stderr so you do not see it
+head = grabs  first 10 lines of file
+tail = grabs last 10 lines of file
+sort = sort lines of a file in alphabetical and numerical order
+uniq = grabs only unique lines of a file
+wc = word count outputs count of new lines (-l), words(-w), and bytes (-c)
+&& or ; = allows multiple commands to be executed
+tr -d '\n' = removes new lines
+
+Tool Commands
