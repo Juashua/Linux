@@ -50,3 +50,48 @@ wc = word count outputs count of new lines (-l), words(-w), and bytes (-c)
 tr -d '\n' = removes new lines
 
 Tool Commands
+file = determines type of file
+echo "string" | base 64 -d = decodes base 64 to ascii text
+echo "string" | xxd -r -p = decodes base 16 to ascii text
+unzip = decompress zip file
+unrar -e = extract rar file
+tar -xf = extract tar file
+tar -cf = compress tar file
+gunzip = extract .gz file
+gzip = compress .gz file
+zcat = unzip and view file
+
+User Commands
+/etc = important info for many programs stored in /etc directory
+/etc/passwd = where to find users (name, id, group id) 
+/etc/shadow = password for users
+useradd = adds user harder to use requires encrypted password; good for scripting
+adduser = create user easier
+groupadd = adds group better for scripting
+addgroup = adds group easier to use and set up group
+user mod = modify user account
+sudo su = switch user to root
+userdel = delete user
+whoami = displays current user
+
+Permissions Commands
+chmod = change permissions (4=read 2=write 1=execute)
+chown = change owner user file
+ls -l = shows file permissions
+ls -al = shows file permissions including hidden files
+SUID = (4) set uder id 
+SGID = (2) set group id
+stickybit = (1) disallows users to delete
+chgrp = change group, group file
+
+Environment Commands
+ps = displays info about active processes
+kill = terminate processes
+crontab -e = schedule processes (In order min 0-59, hour 0-23, day of month 1-31, month 1-12, day of weekSubday-Saturday 0-6)
+select editor = change from nano, vim, vi
+sudo apt search = search for programs
+sudo apt remove = remove program
+env = run a program in a modified environment
+sudo apt install = install program
+pkill, pgrep = look up, signal, or wait for processes based on name and other attributes
+pkill -9 = permanently kill process
